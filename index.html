@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+<html class="dark scroll-smooth" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Tamil Venthan A | Java Programmer, UI/UX Designer, AI &amp; Data Science Student</title>
+<meta name="description" content="Portfolio of Tamil Venthan A, a B.Tech Artificial Intelligence and Data Science student in Coimbatore. Java, Python, machine learning, UI/UX design, web development and 100+ posters and banners."/>
+<meta property="og:title" content="Tamil Venthan A | Portfolio"/>
+<meta property="og:description" content="Java programmer, UI/UX designer and AI &amp; Data Science student. Projects, certificates and contact."/>
+<meta property="og:type" content="website"/>
+<meta property="og:image" content="assets/photo.jpg"/>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230B0B12'/%3E%3Ctext x='32' y='42' font-family='Arial' font-weight='700' font-size='28' text-anchor='middle' fill='%238B5CF6'%3ETV%3C/text%3E%3C/svg%3E"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;family=JetBrains+Mono:wght@400;500;600&amp;family=Space+Grotesk:wght@500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script>
+  tailwind.config = {
+    darkMode: 'class',
+    theme: {
+      extend: {
+        colors: {
+          brand: {
+            dark: '#0B0B12',
+            card: '#13131F',
+            cardBorder: 'rgba(255, 255, 255, 0.08)',
+            violet: '#8B5CF6',
+            cyan: '#06B6D4',
+            purpleAccent: '#7C3AED',
+            subtext: '#94A3B8'
+          }
+        },
+        fontFamily: {
+          display: ['"Space Grotesk"', 'sans-serif'],
+          body: ['"Inter"', 'sans-serif'],
+          mono: ['"JetBrains Mono"', 'monospace']
+        }
+      }
+    }
+  }
+</script>
+<style>
+  body { background-color: #0B0B12; color: #F8FAFC; font-family: 'Inter', sans-serif; overflow-x: hidden; }
+  .gradient-text { background: linear-gradient(135deg, #8B5CF6 0%, #06B6D4 100%); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; }
+  .glass-card { background: rgba(19, 19, 31, 0.7); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border: 1px solid rgba(255, 255, 255, 0.08); }
+  .glass-card:hover { border-color: rgba(139, 92, 246, 0.4); box-shadow: 0 10px 30px -10px rgba(139, 92, 246, 0.25); }
+  .glow-blob { filter: blur(100px); pointer-events: none; position: absolute; border-radius: 9999px; z-index: 0; }
+  :focus-visible { outline: 2px solid #06B6D4; outline-offset: 3px; border-radius: 8px; }
+  section[id] { scroll-margin-top: 96px; }
+
+  .fade-in { animation: fadeInUp 0.4s cubic-bezier(0.16, 1, 0.3, 1) both; }
+  @keyframes fadeInUp { from { opacity: 0; transform: translateY(16px) scale(0.98); } to { opacity: 1; transform: translateY(0) scale(1); } }
+
+  .cert-thumb { aspect-ratio: 4 / 3; object-fit: cover; object-position: top; width: 100%; background: #fff; }
+  dialog#viewer { background: transparent; border: 0; padding: 0; max-width: 100vw; max-height: 100vh; width: 100%; height: 100%; }
+  dialog#viewer::backdrop { background: rgba(5, 5, 10, 0.85); backdrop-filter: blur(6px); }
+
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto !important; }
+    .animate-bounce, .animate-pulse, .fade-in { animation: none !important; }
+    * { transition-duration: 0.01ms !important; }
+  }
+</style>
+</head>
+<body class="relative selection:bg-brand-violet/30 selection:text-brand-cyan">
+
+<div class="fixed top-0 left-0 h-[3px] bg-gradient-to-r from-brand-violet via-indigo-500 to-brand-cyan z-50 w-0 transition-all duration-75" id="scroll-bar"></div>
+
+<div class="absolute inset-0 overflow-hidden pointer-events-none" aria-hidden="true">
+<div class="glow-blob w-[500px] h-[500px] bg-brand-violet/15 top-[-100px] left-[-150px]"></div>
+<div class="glow-blob w-[550px] h-[550px] bg-brand-cyan/10 top-[20%] right-[-180px]"></div>
+<div class="glow-blob w-[600px] h-[600px] bg-brand-purpleAccent/10 top-[60%] left-[-200px]"></div>
+</div>
+
+<!-- NAVBAR -->
+<header class="sticky top-0 z-40 w-full backdrop-blur-xl bg-[#0B0B12]/80 border-b border-white/5">
+  <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+    <a class="flex items-center gap-3 group" href="#hero" aria-label="Tamil Venthan A, home">
+      <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-brand-violet to-brand-cyan p-[1px] shadow-lg shadow-brand-violet/20 group-hover:scale-105 transition-transform">
+        <div class="w-full h-full bg-[#0B0B12] rounded-[11px] flex items-center justify-center font-display font-bold text-lg text-white">TV<span class="text-brand-cyan">.</span></div>
+      </div>
+      <span class="font-display font-bold text-lg tracking-tight hidden sm:inline-block">Tamil<span class="text-brand-violet">.dev</span></span>
+    </a>
+    <nav class="hidden lg:flex items-center gap-7 text-sm font-medium text-slate-300" aria-label="Main">
+      <a class="hover:text-brand-cyan transition-colors" href="#hero">Home</a>
+      <a class="hover:text-brand-cyan transition-colors" href="#about">About</a>
+      <a class="hover:text-brand-cyan transition-colors" href="#skills">Skills</a>
+      <a class="hover:text-brand-cyan transition-colors" href="#projects">Projects</a>
+      <a class="hover:text-brand-cyan transition-colors" href="#experience">Experience</a>
+      <a class="hover:text-brand-cyan transition-colors" href="#certificates">Certificates</a>
+      <a class="hover:text-brand-cyan transition-colors" href="#gallery">Design Work</a>
+      <a class="hover:text-brand-cyan transition-colors" href="#contact">Contact</a>
+    </nav>
+    <div class="flex items-center gap-3">
+      <a class="relative group overflow-hidden rounded-full p-[1px] font-medium text-sm" href="#contact">
+        <span class="absolute inset-0 bg-gradient-to-r from-brand-violet to-brand-cyan group-hover:opacity-90 transition-opacity"></span>
+        <span class="relative block px-5 py-2.5 rounded-full bg-[#0B0B12] text-white font-display text-xs font-semibold uppercase tracking-wider group-hover:bg-opacity-0 transition-all">Hire Me</span>
+      </a>
+      <button id="menu-btn" class="lg:hidden w-10 h-10 rounded-xl glass-card flex items-center justify-center" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
+        <span class="material-symbols-outlined">menu</span>
+      </button>
+    </div>
+  </div>
+  <nav id="mobile-menu" class="hidden lg:hidden border-t border-white/5 bg-[#0B0B12]/95 px-6 py-4 grid grid-cols-2 gap-3 text-sm font-medium text-slate-300" aria-label="Mobile">
+    <a class="py-2 hover:text-brand-cyan" href="#about">About</a>
+    <a class="py-2 hover:text-brand-cyan" href="#skills">Skills</a>
+    <a class="py-2 hover:text-brand-cyan" href="#projects">Projects</a>
+    <a class="py-2 hover:text-brand-cyan" href="#experience">Experience</a>
+    <a class="py-2 hover:text-brand-cyan" href="#certificates">Certificates</a>
+    <a class="py-2 hover:text-brand-cyan" href="#gallery">Design Work</a>
+    <a class="py-2 hover:text-brand-cyan" href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main class="relative z-10 max-w-7xl mx-auto px-6 space-y-32 pt-12 pb-24">
+
+<!-- HERO -->
+<section class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center min-h-[82vh]" id="hero">
+  <div class="lg:col-span-7 space-y-6">
+    <div class="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full glass-card text-xs font-mono text-emerald-400">
+      <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+      <span>Available for internships &amp; research</span>
+    </div>
+    <h1 class="font-display text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight leading-[1.12]">
+      Hi, I'm <span class="text-white">Tamil Venthan</span>, I build <span class="gradient-text">intelligent products</span> and design <span class="gradient-text">experiences people love.</span>
+    </h1>
+    <div class="flex flex-wrap items-center gap-2 pt-1 font-mono text-xs sm:text-sm text-slate-300">
+      <span class="px-3 py-1 rounded-md bg-white/5 border border-white/10 text-brand-violet font-semibold">Java Programmer</span>
+      <span class="px-3 py-1 rounded-md bg-white/5 border border-white/10 text-brand-cyan font-semibold">UI/UX Designer</span>
+      <span class="px-3 py-1 rounded-md bg-white/5 border border-white/10 text-indigo-400 font-semibold">Poster Designer</span>
+      <span class="px-3 py-1 rounded-md bg-white/5 border border-white/10 text-purple-300 font-semibold">AI/ML Enthusiast</span>
+    </div>
+    <p class="text-slate-400 text-base sm:text-lg max-w-xl leading-relaxed">
+      B.Tech student in Artificial Intelligence &amp; Data Science at Karpagam Academy of Higher Education, Coimbatore. I work with Java, Python and machine learning, and design interfaces and posters that are easy to use and look good.
+    </p>
+    <div class="flex flex-wrap items-center gap-4 pt-4">
+      <a class="px-7 py-3.5 rounded-full bg-gradient-to-r from-brand-violet to-brand-cyan text-white font-display text-sm font-semibold tracking-wide shadow-lg shadow-brand-violet/25 hover:shadow-brand-cyan/40 hover:scale-105 transition-all flex items-center gap-2" href="#projects">
+        <span>View Projects</span><span class="material-symbols-outlined text-lg">arrow_forward</span>
+      </a>
+      <a class="px-7 py-3.5 rounded-full glass-card text-slate-200 hover:text-white font-display text-sm font-medium hover:scale-105 transition-all flex items-center gap-2" href="assets/Tamil_Venthan_A_Resume.pdf" download="Tamil_Venthan_A_Resume.pdf">
+        <span class="material-symbols-outlined text-lg text-brand-cyan">description</span><span>Download Resume</span>
+      </a>
+    </div>
+    <div class="flex items-center gap-4 pt-4 text-slate-400">
+      <span class="text-xs uppercase font-mono tracking-widest text-slate-500">Connect:</span>
+      <a class="w-10 h-10 rounded-full glass-card flex items-center justify-center text-slate-300 hover:text-brand-cyan hover:border-brand-cyan/50 transition-all" href="https://github.com/Tamilventhan7" rel="noopener noreferrer" target="_blank" aria-label="GitHub profile">
+        <svg width="18" height="18" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+      </a>
+      <a class="w-10 h-10 rounded-full glass-card flex items-center justify-center text-slate-300 hover:text-brand-violet hover:border-brand-violet/50 transition-all font-display font-bold text-sm" href="https://www.linkedin.com/in/tamilventhan0507" rel="noopener noreferrer" target="_blank" aria-label="LinkedIn profile">in</a>
+      <a class="w-10 h-10 rounded-full glass-card flex items-center justify-center text-slate-300 hover:text-indigo-400 hover:border-indigo-400/50 transition-all" href="mailto:tamizzzh.a@gmail.com" aria-label="Send an email">
+        <span class="material-symbols-outlined text-lg">mail</span>
+      </a>
+    </div>
+  </div>
+
+  <div class="lg:col-span-5 relative flex justify-center items-center">
+    <div class="relative w-[320px] sm:w-[380px] h-[400px] sm:h-[460px]">
+      <div class="absolute inset-0 bg-gradient-to-tr from-brand-violet via-indigo-600 to-brand-cyan rounded-[2.5rem] blur-2xl opacity-40"></div>
+      <div class="relative w-full h-full rounded-[2.2rem] overflow-hidden border border-white/15 bg-brand-card p-2 shadow-2xl">
+        <img alt="Portrait of Tamil Venthan A in a black suit" class="w-full h-full object-cover rounded-[1.8rem]" style="object-position: 50% 22%;" src="assets/photo.jpg" width="900" height="1200" fetchpriority="high"/>
+        <div class="absolute inset-0 bg-gradient-to-t from-[#0B0B12]/60 via-transparent to-transparent pointer-events-none"></div>
+      </div>
+      <div class="absolute -top-3 -left-4 sm:top-2 sm:-left-6 px-3.5 py-1.5 rounded-xl glass-card flex items-center gap-2 shadow-xl animate-bounce" style="animation-duration: 4s;">
+        <span class="w-2 h-2 rounded-full bg-brand-violet"></span><span class="font-mono text-xs font-bold text-white">Java</span>
+      </div>
+      <div class="absolute top-8 -right-4 sm:top-10 sm:-right-6 px-3.5 py-1.5 rounded-xl glass-card flex items-center gap-2 shadow-xl animate-bounce" style="animation-duration: 5s; animation-delay: 1s;">
+        <span class="w-2 h-2 rounded-full bg-brand-cyan"></span><span class="font-mono text-xs font-bold text-white">PyTorch</span><span class="text-[10px] text-brand-cyan">ML</span>
+      </div>
+      <div class="absolute -bottom-3 -left-3 sm:bottom-4 sm:-left-5 px-3.5 py-1.5 rounded-xl glass-card flex items-center gap-2 shadow-xl animate-bounce" style="animation-duration: 4.5s; animation-delay: 2s;">
+        <span class="w-2 h-2 rounded-full bg-indigo-400"></span><span class="font-mono text-xs font-bold text-white">Figma</span><span class="text-[10px] text-slate-400">UI/UX</span>
+      </div>
+      <div class="absolute bottom-6 -right-4 sm:bottom-12 sm:-right-6 px-3.5 py-1.5 rounded-xl glass-card flex items-center gap-2 shadow-xl animate-bounce" style="animation-duration: 5.5s; animation-delay: 1.5s;">
+        <span class="w-2 h-2 rounded-full bg-emerald-400"></span><span class="font-mono text-xs font-bold text-white">Docker</span><span class="text-[10px] text-emerald-400">DevOps</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STATS -->
+<section class="glass-card rounded-2xl p-8 shadow-xl" aria-label="Highlights">
+  <div class="grid grid-cols-2 md:grid-cols-4 gap-8 md:divide-x divide-white/10">
+    <div class="text-center space-y-1">
+      <div class="font-display text-4xl sm:text-5xl font-bold gradient-text">100+</div>
+      <div class="font-display font-semibold text-sm sm:text-base text-white">Posters &amp; Banners</div>
+      <p class="text-xs text-slate-400">For startup companies</p>
+    </div>
+    <div class="text-center space-y-1">
+      <div class="font-display text-4xl sm:text-5xl font-bold gradient-text">3</div>
+      <div class="font-display font-semibold text-sm sm:text-base text-white">Hackathons</div>
+      <p class="text-xs text-slate-400">Theervathon, internal &amp; Smart India</p>
+    </div>
+    <div class="text-center space-y-1">
+      <div class="font-display text-4xl sm:text-5xl font-bold gradient-text" id="cert-count">16</div>
+      <div class="font-display font-semibold text-sm sm:text-base text-white">Certificates</div>
+      <p class="text-xs text-slate-400">Internship, Infosys, Nasscom &amp; LinkedIn</p>
+    </div>
+    <div class="text-center space-y-1">
+      <div class="font-display text-4xl sm:text-5xl font-bold gradient-text">8.16</div>
+      <div class="font-display font-semibold text-sm sm:text-base text-white">B.Tech CGPA</div>
+      <p class="text-xs text-slate-400">Out of 10</p>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="space-y-12" id="about">
+  <div class="flex items-center gap-3">
+    <span class="h-px w-8 bg-brand-violet"></span>
+    <span class="font-mono text-xs uppercase tracking-widest text-brand-violet font-semibold">About Me</span>
+  </div>
+  <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-stretch">
+    <div class="lg:col-span-7 glass-card rounded-2xl p-8 sm:p-10 space-y-6 flex flex-col justify-between">
+      <div class="space-y-4">
+        <h2 class="font-display text-2xl sm:text-3xl font-bold text-white leading-snug">Solving real-world problems with AI and good design</h2>
+        <p class="text-slate-300 text-sm sm:text-base leading-relaxed">
+          I'm a B.Tech student in <span class="text-white font-semibold">Artificial Intelligence &amp; Data Science</span> interested in machine learning, computer vision and human-centric technology. I write Java and Python, design interfaces in Figma, and have made more than 100 posters and banners for startup companies.
+        </p>
+        <p class="text-slate-400 text-sm sm:text-base leading-relaxed">
+          This year I completed a data analytics internship at VSP Technology, earned certificates in React, DevOps, Docker and cyber security, and built TransitOps+, a fleet management platform, with my team. Next, I want to do research in an international environment.
+        </p>
+      </div>
+      <div class="grid grid-cols-3 gap-4 pt-4 border-t border-white/10">
+        <div><span class="font-mono text-xs text-brand-cyan block">Build</span><span class="font-display text-sm font-semibold text-white">Java, Python &amp; web</span></div>
+        <div><span class="font-mono text-xs text-brand-violet block">Design</span><span class="font-display text-sm font-semibold text-white">UI/UX &amp; posters</span></div>
+        <div><span class="font-mono text-xs text-indigo-400 block">Goal</span><span class="font-display text-sm font-semibold text-white">Global research</span></div>
+      </div>
+    </div>
+    <div class="lg:col-span-5 glass-card rounded-2xl p-8 sm:p-10 relative overflow-hidden flex flex-col justify-between border-brand-violet/20">
+      <div class="absolute -right-16 -top-16 w-48 h-48 bg-brand-violet/10 rounded-full blur-3xl pointer-events-none"></div>
+      <div class="space-y-6 relative">
+        <div class="w-12 h-12 rounded-xl bg-brand-violet/10 border border-brand-violet/20 flex items-center justify-center text-brand-violet"><span class="material-symbols-outlined text-2xl">school</span></div>
+        <div>
+          <span class="font-mono text-xs text-brand-cyan font-semibold">Undergraduate degree</span>
+          <h3 class="font-display text-xl font-bold text-white mt-1">B.Tech in Artificial Intelligence &amp; Data Science</h3>
+          <p class="text-sm text-slate-400 mt-1">Karpagam Academy of Higher Education</p>
+          <p class="text-xs text-slate-500">Coimbatore, Tamil Nadu, India</p>
+        </div>
+        <div class="space-y-3 pt-2">
+          <div class="flex justify-between items-center bg-white/5 px-4 py-2.5 rounded-lg border border-white/5"><span class="text-xs text-slate-400">Period</span><span class="font-mono text-xs font-semibold text-white">2024 – 2028</span></div>
+          <div class="flex justify-between items-center bg-white/5 px-4 py-2.5 rounded-lg border border-white/5"><span class="text-xs text-slate-400">CGPA</span><span class="font-mono text-xs font-bold text-brand-cyan">8.16 / 10</span></div>
+        </div>
+      </div>
+      <div class="pt-6 mt-6 border-t border-white/10 grid grid-cols-2 gap-3 text-xs font-mono text-slate-400 relative">
+        <div><span class="text-slate-500 block">HSC 2022–24</span><span class="text-white font-semibold">80.83%</span></div>
+        <div><span class="text-slate-500 block">SSLC 2021–22</span><span class="text-white font-semibold">84.4%</span></div>
+        <div class="col-span-2 text-slate-500">Oxford Matriculation Higher Secondary School, Koothanallur</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="space-y-12" aria-labelledby="what-i-do">
+  <div class="text-center max-w-2xl mx-auto space-y-3">
+    <div class="inline-flex items-center gap-2"><span class="h-px w-6 bg-brand-cyan"></span><span class="font-mono text-xs uppercase tracking-widest text-brand-cyan font-semibold">What I Do</span><span class="h-px w-6 bg-brand-cyan"></span></div>
+    <h2 class="font-display text-3xl font-bold text-white" id="what-i-do">Engineering and design, in one person</h2>
+  </div>
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+    <div class="glass-card rounded-2xl p-6 space-y-4 hover:-translate-y-1 transition-all">
+      <div class="w-12 h-12 rounded-xl bg-brand-violet/10 border border-brand-violet/20 flex items-center justify-center text-brand-violet"><span class="material-symbols-outlined text-2xl">design_services</span></div>
+      <h3 class="font-display font-bold text-lg text-white">UI/UX Design</h3>
+      <p class="text-slate-400 text-sm leading-relaxed">Mobile app screens, wireframes and clickable prototypes designed in Figma.</p>
+      <div class="flex flex-wrap gap-1.5 pt-2"><span class="px-2 py-0.5 rounded text-[11px] font-mono bg-white/5 text-brand-violet border border-white/5">Figma</span><span class="px-2 py-0.5 rounded text-[11px] font-mono bg-white/5 text-slate-400 border border-white/5">Wireframing</span><span class="px-2 py-0.5 rounded text-[11px] font-mono bg-white/5 text-slate-400 border border-white/5">Prototyping</span></div>
+    </div>
+    <div class="glass-card rounded-2xl p-6 space-y-4 hover:-translate-y-1 transition-all">
+      <div class="w-12 h-12 rounded-xl bg-brand-cyan/10 border border-brand-cyan/20 flex items-center justify-center text-brand-cyan"><span class="material-symbols-outlined text-2xl">code_blocks</span></div>
+      <h3 class="font-display font-bold text-lg text-white">Web Development</h3>
+      <p class="text-slate-400 text-sm leading-relaxed">Responsive websites and apps with HTML, CSS, JavaScript, TypeScript, Angular and React.</p>
+      <div class="flex flex-wrap gap-1.5 pt-2"><span class="px-2 py-0.5 rounded text-[11px] font-mono bg-white/5 text-brand-cyan border border-white/5">Angular</span><span class="px-2 py-0.5 rounded text-[11px] font-mono bg-white/5 text-slate-400 border border-white/5">React</span><span class="px-2 py-0.5 rounded text-[11px] font-mono bg-white/5 text-slate-400 border border-white/5">TypeScript</span></div>
+    </div>
+    <div class="glass-card rounded-2xl p-6 space-y-4 hover:-translate-y-1 transition-all">
+      <div class="w-12 h-12 rounded-xl bg-indigo-500/10 border border-indigo-500/20 flex items-center justify-center text-indigo-400"><span class="material-symbols-outlined text-2xl">psychology</span></div>
+      <h3 class="font-display font-bold text-lg text-white">AI/ML Solutions</h3>
+      <p class="text-slate-400 text-sm leading-relaxed">Machine learning and computer vision in Python with PyTorch and TensorFlow.</p>
+      <div class="flex flex-wrap gap-1.5 pt-2"><span class="px-2 py-0.5 rounded text-[11px] font-mono bg-white/5 text-indigo-400 border border-white/5">PyTorch</span><span class="px-2 py-0.5 rounded text-[11px] font-mono bg-white/5 text-slate-400 border border-white/5">TensorFlow</span><span class="px-2 py-0.5 rounded text-[11px] font-mono bg-white/5 text-slate-400 border border-white/5">Python</span></div>
+    </div>
+    <div class="glass-card rounded-2xl p-6 space-y-4 hover:-translate-y-1 transition-all">
+      <div class="w-12 h-12 rounded-xl bg-purple-400/10 border border-purple-400/20 flex items-center justify-center text-purple-300"><span class="material-symbols-outlined text-2xl">palette</span></div>
+      <h3 class="font-display font-bold text-lg text-white">Poster &amp; Banner Design</h3>
+      <p class="text-slate-400 text-sm leading-relaxed">More than 100 posters and banners designed for startup companies.</p>
+      <div class="flex flex-wrap gap-1.5 pt-2"><span class="px-2 py-0.5 rounded text-[11px] font-mono bg-white/5 text-purple-300 border border-white/5">100+ works</span><span class="px-2 py-0.5 rounded text-[11px] font-mono bg-white/5 text-slate-400 border border-white/5">Posters</span><span class="px-2 py-0.5 rounded text-[11px] font-mono bg-white/5 text-slate-400 border border-white/5">Banners</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS (rendered from SKILLS below) -->
+<section class="space-y-12" id="skills">
+  <div class="flex flex-col sm:flex-row justify-between items-start sm:items-end gap-4">
+    <div>
+      <div class="inline-flex items-center gap-2"><span class="h-px w-6 bg-brand-violet"></span><span class="font-mono text-xs uppercase tracking-widest text-brand-violet font-semibold">Skills</span></div>
+      <h2 class="font-display text-3xl font-bold text-white mt-1">Technical stack</h2>
+    </div>
+    <p class="text-sm text-slate-400 max-w-md">Skills from my resume and the courses and internships I've completed.</p>
+  </div>
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" id="skills-grid"></div>
+</section>
+
+<!-- PROJECTS -->
+<section class="space-y-12" id="projects">
+  <div class="flex flex-col md:flex-row justify-between items-start md:items-end gap-6">
+    <div>
+      <div class="inline-flex items-center gap-2"><span class="h-px w-6 bg-brand-cyan"></span><span class="font-mono text-xs uppercase tracking-widest text-brand-cyan font-semibold">Portfolio</span></div>
+      <h2 class="font-display text-3xl font-bold text-white mt-1">Projects</h2>
+    </div>
+    <div class="flex flex-wrap items-center p-1 rounded-full glass-card gap-1 bg-[#13131F]/90" id="project-filters" role="group" aria-label="Filter projects"></div>
+  </div>
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-8" id="projects-grid"></div>
+</section>
+
+<!-- EXPERIENCE -->
+<section class="space-y-12" id="experience">
+  <div class="flex items-center gap-3"><span class="h-px w-8 bg-brand-cyan"></span><span class="font-mono text-xs uppercase tracking-widest text-brand-cyan font-semibold">Experience &amp; Activities</span></div>
+  <div class="relative pl-6 sm:pl-8 border-l border-white/10 space-y-10 ml-2">
+    <div class="relative">
+      <div class="absolute -left-[31px] sm:-left-[39px] top-1.5 w-4 h-4 rounded-full bg-brand-violet ring-4 ring-[#0B0B12] shadow-lg shadow-brand-violet/50"></div>
+      <div class="glass-card rounded-2xl p-6 sm:p-8 space-y-3">
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1">
+          <h3 class="font-display text-lg font-bold text-white">Data Analytics Intern</h3>
+          <span class="px-3 py-0.5 rounded-full bg-brand-violet/10 text-brand-violet font-mono text-xs w-fit">VSP Technology, Coimbatore</span>
+        </div>
+        <p class="font-mono text-xs text-brand-cyan">1 – 14 May 2026 · 15 days</p>
+        <p class="text-slate-400 text-sm leading-relaxed">Completed a 15-day data analytics internship. The certificate recognises analytical skills and active participation in assigned tasks and projects.</p>
+        <button type="button" class="text-xs font-mono text-brand-cyan hover:underline" data-open-cert="vsp-data-analytics-internship">View certificate</button>
+      </div>
+    </div>
+    <div class="relative">
+      <div class="absolute -left-[31px] sm:-left-[39px] top-1.5 w-4 h-4 rounded-full bg-brand-cyan ring-4 ring-[#0B0B12] shadow-lg shadow-brand-cyan/50"></div>
+      <div class="glass-card rounded-2xl p-6 sm:p-8 space-y-3">
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1">
+          <h3 class="font-display text-lg font-bold text-white">Full Stack Web Development Internship</h3>
+          <span class="px-3 py-0.5 rounded-full bg-brand-cyan/10 text-brand-cyan font-mono text-xs w-fit">Pantech eLearning Pvt. Ltd.</span>
+        </div>
+        <p class="font-mono text-xs text-indigo-400">Angular · JavaScript · HTML · CSS · Bootstrap · TypeScript · UX · Agile Scrum</p>
+        <p class="text-slate-400 text-sm leading-relaxed">Internship covering front-end and full stack web development with Angular and TypeScript, UX design, and working in Agile Scrum.</p>
+      </div>
+    </div>
+    <div class="relative">
+      <div class="absolute -left-[31px] sm:-left-[39px] top-1.5 w-4 h-4 rounded-full bg-indigo-500 ring-4 ring-[#0B0B12]"></div>
+      <div class="glass-card rounded-2xl p-6 sm:p-8 space-y-3">
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1">
+          <h3 class="font-display text-lg font-bold text-white">Theervathon Hackathon</h3>
+          <span class="px-3 py-0.5 rounded-full bg-indigo-500/10 text-indigo-400 font-mono text-xs w-fit">PSG College · Participant, certified</span>
+        </div>
+        <p class="font-mono text-xs text-slate-400">Indoor Railway Navigation System</p>
+        <p class="text-slate-400 text-sm leading-relaxed">Developed an indoor navigation concept with interactive maps, search and filter, and earned a Theervathon certificate for it.</p>
+      </div>
+    </div>
+    <div class="relative">
+      <div class="absolute -left-[31px] sm:-left-[39px] top-1.5 w-4 h-4 rounded-full bg-purple-400 ring-4 ring-[#0B0B12]"></div>
+      <div class="glass-card rounded-2xl p-6 sm:p-8 space-y-3">
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1">
+          <h3 class="font-display text-lg font-bold text-white">Smart India Hackathon · Initial Contributor</h3>
+          <span class="px-3 py-0.5 rounded-full bg-purple-400/10 text-purple-300 font-mono text-xs w-fit">National initiative</span>
+        </div>
+        <p class="text-slate-400 text-sm leading-relaxed">Took part in problem analysis and technology development, working with the team on solution ideas.</p>
+      </div>
+    </div>
+    <div class="relative">
+      <div class="absolute -left-[31px] sm:-left-[39px] top-1.5 w-4 h-4 rounded-full bg-emerald-400 ring-4 ring-[#0B0B12]"></div>
+      <div class="glass-card rounded-2xl p-6 sm:p-8 space-y-3">
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1">
+          <h3 class="font-display text-lg font-bold text-white">Internal Hackathon</h3>
+          <span class="px-3 py-0.5 rounded-full bg-emerald-400/10 text-emerald-400 font-mono text-xs w-fit">Karpagam Academy</span>
+        </div>
+        <p class="text-slate-400 text-sm leading-relaxed">Collaborative problem-solving and solution development with fellow students.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CERTIFICATES -->
+<section class="space-y-12" id="certificates">
+  <div class="flex flex-col md:flex-row justify-between items-start md:items-end gap-6">
+    <div>
+      <div class="inline-flex items-center gap-2"><span class="h-px w-6 bg-brand-violet"></span><span class="font-mono text-xs uppercase tracking-widest text-brand-violet font-semibold">Certificates</span></div>
+      <h2 class="font-display text-3xl font-bold text-white mt-1">Certificates &amp; courses</h2>
+    </div>
+    <div class="flex flex-wrap items-center p-1 rounded-full glass-card gap-1 bg-[#13131F]/90" id="cert-filters" role="group" aria-label="Filter certificates"></div>
+  </div>
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6" id="cert-grid"></div>
+  <div class="text-center"><button type="button" id="cert-more" class="px-6 py-2.5 rounded-full glass-card font-mono text-xs text-slate-300 hover:text-white transition-all"></button></div>
+</section>
+
+<!-- DESIGN GALLERY -->
+<section class="space-y-12" id="gallery">
+  <div class="flex flex-col sm:flex-row justify-between items-start sm:items-end gap-4">
+    <div>
+      <div class="inline-flex items-center gap-2"><span class="h-px w-6 bg-brand-violet"></span><span class="font-mono text-xs uppercase tracking-widest text-brand-violet font-semibold">Design Work</span></div>
+      <h2 class="font-display text-3xl font-bold text-white mt-1">100+ posters &amp; banners</h2>
+    </div>
+    <span class="text-xs font-mono text-brand-cyan">Designed for startup companies</span>
+  </div>
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6" id="gallery-grid"></div>
+</section>
+
+<!-- TESTIMONIALS (hidden until TESTIMONIALS has entries) -->
+<section class="space-y-12 hidden" id="testimonials">
+  <div class="text-center max-w-xl mx-auto space-y-2">
+    <span class="font-mono text-xs uppercase tracking-widest text-brand-cyan font-semibold">Feedback</span>
+    <h2 class="font-display text-3xl font-bold text-white">What people say</h2>
+  </div>
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-6" id="testimonial-grid"></div>
+</section>
+
+<!-- CONTACT -->
+<section class="space-y-12" id="contact">
+  <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-stretch">
+    <div class="lg:col-span-5 glass-card rounded-2xl p-8 sm:p-10 flex flex-col justify-between space-y-8">
+      <div class="space-y-6">
+        <div class="inline-flex items-center gap-2"><span class="h-px w-6 bg-brand-cyan"></span><span class="font-mono text-xs uppercase tracking-widest text-brand-cyan font-semibold">Contact</span></div>
+        <h2 class="font-display text-3xl sm:text-4xl font-bold text-white leading-tight">Let's build something great together.</h2>
+        <p class="text-slate-400 text-sm leading-relaxed">Open to internships, research opportunities and design work. Send a message and I'll reply by email.</p>
+      </div>
+      <div class="space-y-4">
+        <a class="flex items-center gap-3 text-slate-300 hover:text-brand-cyan transition-colors group" href="mailto:tamizzzh.a@gmail.com">
+          <div class="w-10 h-10 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center text-brand-cyan"><span class="material-symbols-outlined text-lg">mail</span></div>
+          <span class="font-mono text-xs sm:text-sm">tamizzzh.a@gmail.com</span>
+        </a>
+        <a class="flex items-center gap-3 text-slate-300 hover:text-brand-cyan transition-colors" href="https://github.com/Tamilventhan7" target="_blank" rel="noopener noreferrer">
+          <div class="w-10 h-10 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center text-brand-violet"><span class="material-symbols-outlined text-lg">code</span></div>
+          <span class="font-mono text-xs sm:text-sm">github.com/Tamilventhan7</span>
+        </a>
+        <a class="flex items-center gap-3 text-slate-300 hover:text-brand-cyan transition-colors" href="https://www.linkedin.com/in/tamilventhan0507" target="_blank" rel="noopener noreferrer">
+          <div class="w-10 h-10 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center text-indigo-400 font-display font-bold text-sm">in</div>
+          <span class="font-mono text-xs sm:text-sm">linkedin.com/in/tamilventhan0507</span>
+        </a>
+        <div class="flex items-center gap-3 text-slate-300">
+          <div class="w-10 h-10 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center text-emerald-400"><span class="material-symbols-outlined text-lg">location_on</span></div>
+          <span class="font-mono text-xs sm:text-sm">Coimbatore, Tamil Nadu, India</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="lg:col-span-7 glass-card rounded-2xl p-8 sm:p-10">
+      <form id="contact-form" class="space-y-5" novalidate>
+        <input type="checkbox" name="botcheck" class="hidden" style="display:none" tabindex="-1" autocomplete="off"/>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+          <div class="space-y-2">
+            <label for="f-name" class="block font-mono text-xs text-slate-400">Your name</label>
+            <input id="f-name" name="name" class="w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-white placeholder-slate-600 focus:outline-none focus:border-brand-cyan transition-colors text-sm" placeholder="Your name" required type="text" autocomplete="name"/>
+          </div>
+          <div class="space-y-2">
+            <label for="f-email" class="block font-mono text-xs text-slate-400">Email address</label>
+            <input id="f-email" name="email" class="w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-white placeholder-slate-600 focus:outline-none focus:border-brand-cyan transition-colors text-sm" placeholder="you@example.com" required type="email" autocomplete="email"/>
+          </div>
+        </div>
+        <div class="space-y-2">
+          <label for="f-subject" class="block font-mono text-xs text-slate-400">Subject</label>
+          <input id="f-subject" name="subject" class="w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-white placeholder-slate-600 focus:outline-none focus:border-brand-cyan transition-colors text-sm" placeholder="Internship opportunity, project request, collaboration" required type="text"/>
+        </div>
+        <div class="space-y-2">
+          <label for="f-message" class="block font-mono text-xs text-slate-400">Message</label>
+          <textarea id="f-message" name="message" class="w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-white placeholder-slate-600 focus:outline-none focus:border-brand-cyan transition-colors text-sm" placeholder="Tell me about your project, timeline and goals" required rows="5"></textarea>
+        </div>
+        <button id="f-submit" class="w-full py-3.5 rounded-full bg-gradient-to-r from-brand-violet to-brand-cyan text-white font-display text-sm font-semibold tracking-wide hover:shadow-lg hover:shadow-brand-violet/30 hover:scale-[1.01] transition-all flex items-center justify-center gap-2 disabled:opacity-60 disabled:cursor-not-allowed" type="submit">
+          <span id="f-submit-label">Send message</span><span class="material-symbols-outlined text-lg">send</span>
+        </button>
+        <p id="f-status" class="text-sm min-h-[1.5rem]" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="w-full border-t border-white/10 bg-[#0B0B12] py-12">
+  <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-6 text-xs text-slate-500 font-mono">
+    <div class="flex items-center gap-3">
+      <span class="font-display font-bold text-white text-base">TV<span class="text-brand-cyan">.</span></span>
+      <span>© 2026 Tamil Venthan A. All rights reserved.</span>
+    </div>
+    <div class="flex items-center gap-6">
+      <a class="hover:text-white transition-colors" href="https://github.com/Tamilventhan7" target="_blank" rel="noopener noreferrer">GitHub</a>
+      <a class="hover:text-white transition-colors" href="https://www.linkedin.com/in/tamilventhan0507" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      <a class="hover:text-white transition-colors" href="#hero">Back to top ↑</a>
+    </div>
+  </div>
+</footer>
+
+<!-- CERTIFICATE / IMAGE VIEWER -->
+<dialog id="viewer" aria-label="Preview">
+  <div class="w-full h-full flex items-center justify-center p-4" id="viewer-backdrop">
+    <div class="relative max-w-4xl w-full max-h-full flex flex-col gap-3">
+      <div class="flex items-center justify-between gap-3">
+        <p id="viewer-title" class="font-display font-semibold text-white text-sm sm:text-base"></p>
+        <div class="flex items-center gap-2 shrink-0">
+          <a id="viewer-pdf" class="px-4 py-2 rounded-full bg-gradient-to-r from-brand-violet to-brand-cyan text-white font-mono text-xs font-semibold" href="#" target="_blank" rel="noopener noreferrer">Open PDF</a>
+          <button type="button" id="viewer-close" class="w-9 h-9 rounded-full glass-card flex items-center justify-center" aria-label="Close preview"><span class="material-symbols-outlined text-lg">close</span></button>
+        </div>
+      </div>
+      <img id="viewer-img" alt="" class="w-full max-h-[80vh] object-contain rounded-xl bg-white"/>
+    </div>
+  </div>
+</dialog>
+
+<script>
+/* =====================================================================
+   EDIT HERE: the content below drives the Skills, Projects, Certificates,
+   Design Work and Testimonials sections.
+   ===================================================================== */
+
+const WEB3FORMS_KEY = '9289c172-85cf-4db7-a077-7df76c67072e'; // messages go to the email this key was created with
+
+// Add posters like: { src: 'assets/posters/poster-01.jpg', title: 'Event name', caption: 'Poster for ...' }
+const POSTERS = [];
+
+// Add real feedback like: { quote: 'What they said.', name: 'Full name', role: 'Relationship / role' }
+const TESTIMONIALS = [];
+
+const SKILLS = [
+  { icon: 'terminal',  tone: 'text-brand-violet', title: 'Programming', items: ['Java', 'Python', 'TypeScript', 'JavaScript'] },
+  { icon: 'neurology', tone: 'text-brand-cyan',   title: 'AI / Machine Learning', items: ['Machine Learning', 'Computer Vision', 'PyTorch', 'TensorFlow', 'Gen AI', 'Data Analytics'] },
+  { icon: 'language',  tone: 'text-indigo-400',   title: 'Web Technologies', items: ['HTML', 'CSS', 'JavaScript', 'Angular', 'React', 'Bootstrap', 'Responsive Design'] },
+  { icon: 'draw',      tone: 'text-purple-300',   title: 'Design & UI/UX', items: ['Figma', 'Wireframing', 'Prototyping', 'Poster & Banner Design'] },
+  { icon: 'deployed_code', tone: 'text-emerald-400', title: 'DevOps & Testing', items: ['Docker', 'Docker Compose', 'Jenkins', 'Maven', 'Selenium WebDriver (Java)', 'Microservices'] },
+  { icon: 'tune',      tone: 'text-brand-violet', title: 'Methods & Foundations', items: ['Agile', 'Scrum', 'Raspberry Pi', 'Cyber Security Fundamentals'] }
+];
+
+const TONES = {
+  violet: { text: 'text-brand-violet', bg: 'bg-brand-violet/10', border: 'border-brand-violet/20', hover: 'group-hover:text-brand-violet' },
+  cyan:   { text: 'text-brand-cyan',   bg: 'bg-brand-cyan/10',   border: 'border-brand-cyan/20',   hover: 'group-hover:text-brand-cyan' },
+  indigo: { text: 'text-indigo-400',   bg: 'bg-indigo-500/10',   border: 'border-indigo-500/20',   hover: 'group-hover:text-indigo-400' },
+  purple: { text: 'text-purple-300',   bg: 'bg-purple-400/10',   border: 'border-purple-400/20',   hover: 'group-hover:text-purple-300' }
+};
+
+const PROJECTS = [
+  {
+    title: 'TransitOps+ Fleet Management Platform', cat: 'web', tone: 'cyan', badge: 'Team project', stack: 'React · TypeScript · Node.js',
+    desc: 'Dashboard for fleet logistics with live map tracking, smart driver and vehicle dispatching, an AI copilot chat, fuel and carbon analytics, audit logs and a mobile driver view for proof of delivery.',
+    tags: ['React', 'TypeScript', 'Node.js', 'MongoDB', 'Docker'],
+    links: [{ label: 'Source code', href: 'https://github.com/Tamilventhan7/technicaltitans2026' }],
+    note: 'Built with Prasanna S, Dharshan P and Narmadha'
+  },
+  {
+    title: 'Indoor Railway Navigation System', cat: 'hackathon', tone: 'indigo', badge: 'Theervathon, certified', stack: 'PSG College hackathon',
+    desc: 'Indoor navigation concept with interactive maps, search and filter, developed at the Theervathon hackathon.',
+    tags: ['Interactive maps', 'Search', 'Filter'],
+    links: [], note: 'Theervathon Hackathon · PSG College'
+  },
+  {
+    title: 'Mobile App UI Design', cat: 'uiux', tone: 'violet', badge: 'UI/UX', stack: 'Figma · Prototype',
+    desc: 'Mobile app interface with wireframes and clickable prototypes, designed in Figma.',
+    tags: ['Figma', 'Wireframing', 'Prototyping'],
+    links: [], note: 'Designed end to end in Figma'
+  },
+  {
+    title: 'Smart India Hackathon', cat: 'hackathon', tone: 'purple', badge: 'Initial contributor', stack: 'Problem analysis',
+    desc: 'Contributed to problem analysis and technology development as part of the Smart India Hackathon team.',
+    tags: ['Problem analysis', 'Teamwork'],
+    links: [], note: 'National initiative'
+  },
+  {
+    title: 'TVX Company Website', cat: 'web', tone: 'cyan', badge: 'Live site', stack: 'HTML · Vercel',
+    desc: 'Single-page website deployed live on Vercel.',
+    tags: ['HTML', 'Vercel'],
+    links: [{ label: 'Live site', href: 'https://tvx-company.vercel.app' }, { label: 'Source code', href: 'https://github.com/Tamilventhan7/TVX-company' }],
+    note: 'Deployed on Vercel'
+  },
+  {
+    title: 'More on GitHub', cat: 'web', tone: 'violet', badge: 'Open source', stack: 'github.com/Tamilventhan7', dashed: true,
+    desc: 'Browse all my public repositories and code.',
+    tags: ['GitHub'],
+    links: [{ label: 'Open GitHub', href: 'https://github.com/Tamilventhan7' }], note: ''
+  }
+];
+const PROJECT_FILTERS = [['all', 'All'], ['web', 'Web apps'], ['uiux', 'UI/UX'], ['hackathon', 'Hackathons']];
+
+const CERTS = [
+  { id: 'infosys-responsive-website-developer', title: 'TechA Responsive Website Developer', issuer: 'Infosys Springboard', group: 'infosys', date: '17 Sep 2026', sort: '2026-09-17T12:00', tag: 'Web development' },
+  { id: 'infosys-react-web-developer', title: 'React Web Developer', issuer: 'Infosys Springboard', group: 'infosys', date: '17 Sep 2026', sort: '2026-09-17T11:00', tag: 'React' },
+  { id: 'infosys-cyber-security-fundamentals', title: 'Cyber Security Fundamentals', issuer: 'Infosys Springboard', group: 'infosys', date: '17 Sep 2026', sort: '2026-09-17T10:00', tag: 'Cyber security' },
+  { id: 'linkedin-learning-devops-first-project', title: 'DevOps Foundations: Your First Project', issuer: 'LinkedIn Learning', group: 'linkedin', date: '3 Sep 2026', sort: '2026-09-03T03:42', tag: 'DevOps' },
+  { id: 'linkedin-learning-docker-foundations', title: 'Docker Foundations Professional Certificate', issuer: 'LinkedIn Learning', group: 'linkedin', date: '2 Sep 2026', sort: '2026-09-02T18:08', tag: 'Containerization' },
+  { id: 'linkedin-learning-docker-first-project', title: 'Docker: Your First Project', issuer: 'LinkedIn Learning', group: 'linkedin', date: '2 Sep 2026', sort: '2026-09-02T17:32', tag: 'Docker' },
+  { id: 'linkedin-learning-docker-compose', title: 'Learning Docker Compose', issuer: 'LinkedIn Learning', group: 'linkedin', date: '2 Sep 2026', sort: '2026-09-02T17:26', tag: 'Docker' },
+  { id: 'linkedin-learning-selenium-java', title: 'Test Automation with Selenium WebDriver for Java', issuer: 'LinkedIn Learning', group: 'linkedin', date: '2 Sep 2026', sort: '2026-09-02T17:14', tag: 'Java · Selenium' },
+  { id: 'linkedin-learning-docker', title: 'Learning Docker', issuer: 'LinkedIn Learning', group: 'linkedin', date: '2 Sep 2026', sort: '2026-09-02T16:48', tag: 'Docker' },
+  { id: 'linkedin-learning-devops-microservices', title: 'DevOps Foundations: Microservices', issuer: 'LinkedIn Learning', group: 'linkedin', date: '2 Sep 2026', sort: '2026-09-02T16:31', tag: 'DevOps' },
+  { id: 'linkedin-learning-maven', title: 'Introduction to Maven', issuer: 'LinkedIn Learning', group: 'linkedin', date: '2 Sep 2026', sort: '2026-09-02T16:23', tag: 'Maven' },
+  { id: 'linkedin-learning-jenkins', title: 'Learning Jenkins: Automating Software Development and System Administration', issuer: 'LinkedIn Learning', group: 'linkedin', date: '2 Sep 2026', sort: '2026-09-02T16:21', tag: 'Jenkins' },
+  { id: 'linkedin-learning-react-projects', title: 'Building Modern Projects with React', issuer: 'LinkedIn Learning', group: 'linkedin', date: '2 Sep 2026', sort: '2026-09-02T13:48', tag: 'React · JavaScript' },
+  { id: 'nasscom-gen-ai-101', title: 'Gen AI 101', issuer: 'Nasscom FutureSkills Prime', group: 'nasscom', date: '12 Aug 2026', sort: '2026-08-12T12:00', tag: 'Generative AI' },
+  { id: 'vsp-data-analytics-internship', title: 'Data Analytics Internship (15 days)', issuer: 'VSP Technology', group: 'internship', date: '14 May 2026', sort: '2026-05-14T12:00', tag: 'Data analytics' },
+  { id: 'infosys-raspberry-pi-foundation', title: 'TechA Raspberry Pi Foundation', issuer: 'Infosys Springboard', group: 'infosys', date: '27 Mar 2026', sort: '2026-03-27T12:00', tag: 'Raspberry Pi' }
+].sort((a, b) => b.sort.localeCompare(a.sort));
+const CERT_FILTERS = [['all', 'All'], ['internship', 'Internship'], ['infosys', 'Infosys'], ['linkedin', 'LinkedIn Learning'], ['nasscom', 'Nasscom']];
+const CERT_PREVIEW_COUNT = 8;
+
+/* ===================================================================== */
+
+const esc = (s) => String(s).replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+const ACTIVE = ['bg-gradient-to-r', 'from-brand-violet', 'to-brand-cyan', 'text-white', 'shadow-lg', 'shadow-brand-violet/30', 'font-semibold'];
+const INACTIVE = ['text-slate-400', 'hover:text-white', 'hover:bg-white/5', 'font-medium'];
+
+function buildFilters(containerId, list, onChange) {
+  const box = document.getElementById(containerId);
+  box.innerHTML = list.map(([key, label], i) =>
+    `<button type="button" data-filter="${key}" aria-pressed="${i === 0}" class="px-4 py-1.5 rounded-full font-mono text-xs transition-all duration-300">${esc(label)}</button>`).join('');
+  const buttons = [...box.querySelectorAll('button')];
+  const setActive = (btn) => buttons.forEach((b) => {
+    const on = b === btn;
+    b.classList.remove(...ACTIVE, ...INACTIVE);
+    b.classList.add(...(on ? ACTIVE : INACTIVE));
+    b.setAttribute('aria-pressed', on);
+  });
+  buttons.forEach((b) => b.addEventListener('click', () => { setActive(b); onChange(b.dataset.filter); }));
+  setActive(buttons[0]);
+}
+
+/* Skills */
+document.getElementById('skills-grid').innerHTML = SKILLS.map((g) => `
+  <div class="glass-card rounded-2xl p-6 space-y-4">
+    <div class="flex items-center gap-3"><span class="material-symbols-outlined ${g.tone}">${g.icon}</span><h3 class="font-display font-bold text-base text-white">${esc(g.title)}</h3></div>
+    <div class="flex flex-wrap gap-2">${g.items.map((s) => `<span class="px-3 py-1.5 rounded-lg bg-white/5 border border-white/10 font-mono text-xs text-white">${esc(s)}</span>`).join('')}</div>
+  </div>`).join('');
+
+/* Projects */
+function renderProjects(filter) {
+  const list = PROJECTS.filter((p) => filter === 'all' || p.cat === filter);
+  document.getElementById('projects-grid').innerHTML = list.map((p) => {
+    const t = TONES[p.tone];
+    return `
+    <article class="fade-in glass-card rounded-2xl overflow-hidden group flex flex-col justify-between ${p.dashed ? 'border-dashed' : ''}">
+      <div class="p-8 space-y-4">
+        <div class="flex justify-between items-center gap-3">
+          <span class="px-3 py-1 rounded-full ${t.bg} border ${t.border} ${t.text} font-mono text-xs font-semibold">${esc(p.badge)}</span>
+          <span class="text-xs font-mono text-slate-500 text-right">${esc(p.stack)}</span>
+        </div>
+        <h3 class="font-display text-2xl font-bold text-white ${t.hover} transition-colors">${esc(p.title)}</h3>
+        <p class="text-slate-400 text-sm leading-relaxed">${esc(p.desc)}</p>
+        <div class="flex flex-wrap gap-2 pt-2">${p.tags.map((x) => `<span class="px-2.5 py-1 rounded bg-white/5 font-mono text-xs text-slate-300">${esc(x)}</span>`).join('')}</div>
+      </div>
+      <div class="px-8 pb-8 pt-4 flex flex-wrap items-center justify-between gap-3 border-t border-white/5">
+        <span class="text-xs font-mono text-slate-500">${esc(p.note)}</span>
+        <div class="flex items-center gap-4">${p.links.map((l) => `<a class="inline-flex items-center gap-1.5 text-xs font-mono ${t.text} hover:underline" href="${esc(l.href)}" target="_blank" rel="noopener noreferrer">${esc(l.label)}<span class="material-symbols-outlined text-sm">arrow_outward</span></a>`).join('')}</div>
+      </div>
+    </article>`;
+  }).join('');
+}
+buildFilters('project-filters', PROJECT_FILTERS, renderProjects);
+renderProjects('all');
+
+/* Certificates */
+let certFilter = 'all', certExpanded = false;
+function renderCerts() {
+  const list = CERTS.filter((c) => certFilter === 'all' || c.group === certFilter);
+  const shown = certExpanded ? list : list.slice(0, CERT_PREVIEW_COUNT);
+  document.getElementById('cert-grid').innerHTML = shown.map((c) => `
+    <button type="button" data-open-cert="${c.id}" class="fade-in glass-card rounded-2xl overflow-hidden text-left group flex flex-col">
+      <img class="cert-thumb" loading="lazy" src="assets/cert-previews/${c.id}.jpg" alt="Certificate: ${esc(c.title)}"/>
+      <div class="p-4 space-y-1.5 flex-1">
+        <h3 class="font-display font-semibold text-sm text-white leading-snug group-hover:text-brand-cyan transition-colors">${esc(c.title)}</h3>
+        <p class="text-xs text-slate-400">${esc(c.issuer)}</p>
+        <div class="flex items-center justify-between pt-1"><span class="font-mono text-[11px] text-brand-cyan">${esc(c.tag)}</span><span class="font-mono text-[11px] text-slate-500">${esc(c.date)}</span></div>
+      </div>
+    </button>`).join('');
+  const more = document.getElementById('cert-more');
+  if (list.length > CERT_PREVIEW_COUNT) {
+    more.classList.remove('hidden');
+    more.textContent = certExpanded ? 'Show fewer' : `Show all ${list.length} certificates`;
+  } else { more.classList.add('hidden'); }
+}
+buildFilters('cert-filters', CERT_FILTERS, (f) => { certFilter = f; certExpanded = false; renderCerts(); });
+document.getElementById('cert-more').addEventListener('click', () => { certExpanded = !certExpanded; renderCerts(); });
+document.getElementById('cert-count').textContent = CERTS.length;
+renderCerts();
+
+/* Viewer (certificates and posters) */
+const viewer = document.getElementById('viewer');
+function openViewer({ title, img, pdf }) {
+  document.getElementById('viewer-title').textContent = title;
+  const i = document.getElementById('viewer-img'); i.src = img; i.alt = title;
+  const a = document.getElementById('viewer-pdf');
+  if (pdf) { a.href = pdf; a.classList.remove('hidden'); } else { a.classList.add('hidden'); }
+  viewer.showModal();
+}
+document.addEventListener('click', (e) => {
+  const btn = e.target.closest('[data-open-cert]');
+  if (btn) {
+    const c = CERTS.find((x) => x.id === btn.dataset.openCert);
+    if (c) openViewer({ title: `${c.title}, ${c.issuer}`, img: `assets/cert-previews/${c.id}.jpg`, pdf: `assets/certificates/${c.id}.pdf` });
+  }
+  if (e.target.id === 'viewer-backdrop') viewer.close();
+});
+document.getElementById('viewer-close').addEventListener('click', () => viewer.close());
+
+/* Design gallery */
+const galleryGrid = document.getElementById('gallery-grid');
+if (POSTERS.length) {
+  galleryGrid.innerHTML = POSTERS.map((p, i) => `
+    <button type="button" data-poster="${i}" class="glass-card rounded-2xl overflow-hidden group aspect-[3/4] relative text-left">
+      <img src="${esc(p.src)}" alt="${esc(p.title || 'Poster design')}" loading="lazy" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"/>
+      <div class="absolute inset-x-0 bottom-0 p-5 bg-gradient-to-t from-[#0B0B12] to-transparent"><h3 class="font-display text-base font-bold text-white">${esc(p.title || '')}</h3><p class="text-xs text-slate-300">${esc(p.caption || '')}</p></div>
+    </button>`).join('');
+  galleryGrid.addEventListener('click', (e) => {
+    const b = e.target.closest('[data-poster]'); if (!b) return;
+    const p = POSTERS[+b.dataset.poster]; openViewer({ title: p.title || 'Poster', img: p.src, pdf: '' });
+  });
+} else {
+  galleryGrid.className = 'grid grid-cols-1';
+  galleryGrid.innerHTML = `
+    <div class="glass-card rounded-2xl p-10 text-center space-y-4">
+      <div class="w-14 h-14 mx-auto rounded-xl bg-purple-400/10 border border-purple-400/20 flex items-center justify-center text-purple-300"><span class="material-symbols-outlined text-3xl">palette</span></div>
+      <h3 class="font-display text-xl font-bold text-white">Samples available on request</h3>
+      <p class="text-slate-400 text-sm max-w-xl mx-auto leading-relaxed">I've designed more than 100 posters and banners for startup companies. Message me and I'll send samples that match what you need.</p>
+      <a href="#contact" class="inline-flex px-6 py-2.5 rounded-full glass-card font-display text-sm text-white hover:scale-105 transition-all">Request samples</a>
+    </div>`;
+}
+
+/* Testimonials (shown only when there is real feedback to show) */
+if (TESTIMONIALS.length) {
+  document.getElementById('testimonials').classList.remove('hidden');
+  document.getElementById('testimonial-grid').innerHTML = TESTIMONIALS.map((t) => `
+    <figure class="glass-card rounded-2xl p-6 space-y-4">
+      <blockquote class="text-slate-300 text-sm italic leading-relaxed">“${esc(t.quote)}”</blockquote>
+      <figcaption><div class="font-display font-semibold text-sm text-white">${esc(t.name)}</div><div class="text-xs font-mono text-slate-500">${esc(t.role || '')}</div></figcaption>
+    </figure>`).join('');
+}
+
+/* Contact form (Web3Forms) */
+const form = document.getElementById('contact-form');
+const statusEl = document.getElementById('f-status');
+const submitBtn = document.getElementById('f-submit');
+const submitLabel = document.getElementById('f-submit-label');
+form.addEventListener('submit', async (e) => {
+  e.preventDefault();
+  statusEl.className = 'text-sm min-h-[1.5rem] text-slate-400';
+  if (!form.checkValidity()) { form.reportValidity(); return; }
+  const fd = new FormData(form);
+  if (fd.get('botcheck')) return; // spam trap
+  const payload = {
+    access_key: WEB3FORMS_KEY,
+    name: fd.get('name'),
+    email: fd.get('email'),
+    subject: `Portfolio: ${fd.get('subject')}`,
+    message: fd.get('message'),
+    from_name: 'Portfolio website'
+  };
+  submitBtn.disabled = true; submitLabel.textContent = 'Sending...';
+  try {
+    const res = await fetch('https://api.web3forms.com/submit', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+      body: JSON.stringify(payload)
+    });
+    const data = await res.json();
+    if (res.ok && data.success) {
+      form.reset();
+      statusEl.className = 'text-sm min-h-[1.5rem] text-emerald-400';
+      statusEl.textContent = "Message sent. I'll reply to the email address you entered.";
+    } else { throw new Error(data.message || 'Request failed'); }
+  } catch (err) {
+    statusEl.className = 'text-sm min-h-[1.5rem] text-red-400';
+    statusEl.innerHTML = 'The message could not be sent. Please try again, or email <a class="underline" href="mailto:tamizzzh.a@gmail.com">tamizzzh.a@gmail.com</a> directly.';
+  } finally {
+    submitBtn.disabled = false; submitLabel.textContent = 'Send message';
+  }
+});
+
+/* Mobile menu + scroll progress */
+const menuBtn = document.getElementById('menu-btn');
+const mobileMenu = document.getElementById('mobile-menu');
+menuBtn.addEventListener('click', () => {
+  const open = mobileMenu.classList.toggle('hidden') === false;
+  menuBtn.setAttribute('aria-expanded', open);
+});
+mobileMenu.querySelectorAll('a').forEach((a) => a.addEventListener('click', () => { mobileMenu.classList.add('hidden'); menuBtn.setAttribute('aria-expanded', 'false'); }));
+window.addEventListener('scroll', () => {
+  const h = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  document.getElementById('scroll-bar').style.width = (h > 0 ? (document.documentElement.scrollTop / h) * 100 : 0) + '%';
+}, { passive: true });
+</script>
+</body>
+</html>
